@@ -60,6 +60,6 @@ function [pixelPrecision, pixelAccuracy, pixelSpecificity, pixelSensitivity] = s
     fprintf('The Accuracy of the system is: %.3f %% \n',pixelAccuracy*100)
     fprintf('The Specificity of the system is: %.3f %% \n',pixelSpecificity*100)
     fprintf('The Sensitivity of the system is: %.3f %% \n',pixelSensitivity*100)
-    fprintf('The F1-score of the system is: %.3f %% \n',2*(pixelPrecision * pixelSensitivity)/(pixelPrecision + pixelSensitivity))
+    fprintf('The F1-score of the system is: %.3f %% \n',2*(pixelPrecision * pixelSensitivity)/(pixelPrecision + pixelSensitivity)*100)
 
 end
