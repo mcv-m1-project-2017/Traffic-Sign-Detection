@@ -40,8 +40,8 @@ pathToDir = '../train/';
 % Task 3
 colorAnalysis(pathToDir,Training,TrainingPosition,ImageSigDist,sigPos,sigColor)
 
-redBound = [195 240];
-blueBound = [20 340];
+blueBound = [195 240];
+redBound = [20 340];
 satBound = 0.45;
 valBound = [0.05 0.95];
 
