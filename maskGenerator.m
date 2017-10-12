@@ -43,6 +43,7 @@ function ValidationMasks = maskGenerator(pathToDir,Validation,redBound,blueBound
 
     % Here it iterates over the validation images and their correspondance
     % ground truth.
+    tic;
     for i = 1:length(Validation)
         image   = rgb2hsv(imread([path Validation{i}]));
         image(:,:,1) = image(:,:,1)*360;
@@ -53,5 +54,6 @@ function ValidationMasks = maskGenerator(pathToDir,Validation,redBound,blueBound
             & (image(:,:,2)>=sat) ...
             & (image(:,:,3)>=val(1) & image(:,:,3)<=val(2));
     end
-
+    time = toc;
+    fprintf('The mean time for processing the images is: %.3f',time/length(Validation))
 end
