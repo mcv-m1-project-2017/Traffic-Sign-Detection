@@ -69,7 +69,7 @@ tmpMatch = 'Correlation';
 % Possible models to choose: {'HSV','HSV+YCbCr'}
 model = 'HSV';
 % Possible models to choose: {'CCL','Global','Sliding Window','Integral Image','Convolution'}
-regionModel = 'Convolution';
+regionModel = 'Integral Image';
 % Possible models to choose: {'Correlation', 'Distance Transform'}
 tmpMatch = 'Correlation';
 
